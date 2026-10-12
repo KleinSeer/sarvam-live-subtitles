@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h1>Sarvam Live Subtitles</h1>
+
+    <label>
+      Target language
+      <select id="lang"></select>
+    </label>
+
+    <label>
+      Sarvam API key
+      <input id="key" type="password" placeholder="paste your api-subscription-key" autocomplete="off" />
+    </label>
+
+    <div class="row">
+      <button id="start">Start</button>
+      <button id="stop" class="secondary">Stop</button>
+    </div>
+
+    <p id="status" class="status"></p>
+
+    <p class="hint">
+      Play a video in this tab, then press Start. Subtitles appear at the bottom
+      of the page. Your key is stored locally in this browser only.
+    </p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
